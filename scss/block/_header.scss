@@ -1,0 +1,44 @@
+.net__container {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.net__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 35px;
+    box-shadow: 0 0 6px 3px greenyellow;
+}
+
+.net__item {
+    max-width: 500px;
+    padding: 20px 30px;
+    background-color: turquoise;
+    border-radius: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    box-shadow: 0 0 6px 3px gray;
+}
+
+.net__box{
+    margin-bottom: 30px;
+}
+.net__text{
+    color: white;
+    font-weight: 600;;
+}
+.net__link {
+    color: blue;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+body {
+    background-image: url(../../img/back-2.jpg);
+    background-repeat: no-repeat;
+}
