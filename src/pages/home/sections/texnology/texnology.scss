@@ -106,11 +106,11 @@
     }
 
     .icon__block {
+        justify-content: space-around;
         gap: 20px;
     }
 
     .icon-img:hover {
-        // width: auto;
         transform: perspective(600px) rotateY(45deg);
         transition: none;
     }
@@ -131,7 +131,7 @@
 
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:500px) { 
 
     .texnology {
         padding: 30px 0;
@@ -148,6 +148,7 @@
 
     .icon__block {
         width: 300px;
+        justify-content: space-around;
         gap: 8px;
     }
 

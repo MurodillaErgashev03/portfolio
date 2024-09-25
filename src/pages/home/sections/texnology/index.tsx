@@ -44,7 +44,7 @@ function Texnology() {
 
             <div className="tech-icon">
               <img className="icon-img" src={react} alt="React logo" />
-            </div>
+            </div> 
 
             <div className="tech-icon">
               <img
