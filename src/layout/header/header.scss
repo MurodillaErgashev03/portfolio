@@ -1,0 +1,164 @@
+@import 'src/styles/variables.scss';
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    position: relative;
+    z-index: 11;
+    background: #1c1c1e;
+    padding: 10px 45px;
+
+    &-burger {
+        display: none;
+        cursor: pointer;
+    }
+}
+
+.header__title {
+    -webkit-animation: slide-in 3s ease-out 1s forwards;
+    animation: slide-in 3s ease-out 1s forwards;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #ff5f6d, #ffc371);
+    color: #03a9f4;
+    color: transparent;
+    cursor: pointer;
+    font-size: 50px;
+    padding-right: 10px;
+    letter-spacing: 3px;
+}
+
+
+.header__list-group {
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+
+
+
+
+.contact {
+    background-color: #48c232;
+    padding: 10px 15px;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.header-menu {
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+}
+
+.header-menu:hover {
+    color: #6ae754;
+}
+
+.header-menu:after {
+    content: '';
+    height: 4px;
+    width: 0px;
+    background-color: #23970e;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -7px;
+    right: 0%;
+    transition: 1s;
+}
+
+.header-menu:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.navbar__toggle {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+
+.bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 20%;
+    transition: 0.4s;
+}
+
+.header__input {
+    display: none;
+}
+
+.header__input:checked~.header__list-group {
+    transform: translateY(0);
+}
+
+.drawer-block {
+    display: none;
+}
+
+.header__list-group-drawer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media screen and (max-width:1170px) {
+    .header {
+        padding: 20px 20px;
+    }
+
+    .header__title {
+        font-size: 36px;
+    }
+
+    .header-menu {
+        font-size: 16px;
+    }
+
+    .header__list-group {
+        gap: 15px;
+    }
+
+    .contact {
+        padding: 7px 10px;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width:850px) {
+
+    .drawer-block {
+        display: block;
+    }
+
+    .header__list-group {
+        display: none;
+    }
+
+    .header__item-list {
+        padding-left: 30px;
+
+    }
+
+    .navbar__toggle {
+        display: grid !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header {
+        padding: 0;
+    }
+}
