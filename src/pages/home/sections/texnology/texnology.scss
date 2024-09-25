@@ -86,8 +86,11 @@
         width: 100px;
     }
 
+    .icon-img:hover {
+        width: 100px;
+    }
+
     .texnology__title {
-        // margin-top: 50px;
         font-size: 28px;
     }
 }
@@ -105,6 +108,12 @@
     .icon__block {
         gap: 20px;
     }
+
+    .icon-img:hover {
+        // width: auto;
+        transform: perspective(600px) rotateY(45deg);
+        transition: none;
+    }
 }
 
 @media screen and (max-width:710px) {
@@ -120,14 +129,14 @@
         font-size: 24px;
     }
 
-    .icon__block {}
 }
 
 @media screen and (max-width:500px) {
-    
+
     .texnology {
-        padding:  30px 0;
+        padding: 30px 0;
     }
+
     .icon__container {
         width: 300px;
         padding: 0 !important;
@@ -139,9 +148,6 @@
 
     .icon__block {
         width: 300px;
-        // width: 100% !important;
-        // margin-left:0 !important;
-        // margin-right:  0 !important;
         gap: 8px;
     }
 
@@ -151,6 +157,12 @@
 
     .icon-img {
         width: 70px;
+    }
+
+    .icon-img:hover {
+        width: 70px;
+        transform: perspective(600px) rotateY(45deg);
+        transition: none;
     }
 }
 
