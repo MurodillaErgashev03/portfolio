@@ -60,7 +60,7 @@ function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {selectedProject.link}
+                  {selectedProject.name}
                 </a>
               </div>
               <p>{selectedProject.desc}</p>
